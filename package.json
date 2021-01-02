@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Compiles SVG paths for CNC software down to basic X/Y movements. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in Cricut, and then set the tool for each layer.",
   "main": "index.js",
+  "module": "build/index.js",
   "scripts": {
     "dev": "npx snowpack dev",
     "test": "echo 'todo'",
