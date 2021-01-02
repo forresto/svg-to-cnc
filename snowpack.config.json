@@ -1,0 +1,10 @@
+{
+  "experiments": {
+    "optimize": {
+      "entrypoints": ["index.js"],
+      "bundle": true,
+      "minify": true,
+      "target": "es2018"
+    }
+  }
+}

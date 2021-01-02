@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Starter Snowpack App" />
+    <title>svg-to-cnc demo</title>
+  </head>
+  <body>
+    <h1>svg-to-cnc</h1>
+    <a href="https://github.com/forresto/svg-to-cnc">svg-to-cnc on Github</a>
+
+    <h2>Test input</h2>
+
+    <svg id="input" width="2in" height="1.5in" viewBox="0 0 200 150">
+      <rect stroke="blue" fill="none" stroke-width="3" width="10" height="10" />
+      <g transform="translate(150 90) rotate(-135) scale(3)">
+        <path
+          stroke="black"
+          fill="none"
+          d="M -10 -10 l 10 0 l 0 10 l -10 0 l -5 -5 Z"
+        ></path>
+      </g>
+      <g transform="translate(100 80) rotate(30) scale(1 0.5)">
+        <circle stroke="red" stroke-width="7" fill="none" r="100" />
+      </g>
+      <g stroke="blue" fill="none" stroke-width="3">
+        <circle r="20" cx="150" cy="55" />
+        <rect x="143" y="48" width="15" height="15" />
+      </g>
+      <g transform="translate(30 80) scale(0.5)">
+        <path
+          id="heart"
+          stroke="purple"
+          fill="rgba(255,255,255,0.75)"
+          d="M 10,30
+            A 20,20 0,0,1 50,30
+            A 20,20 0,0,1 90,30
+            Q 90,60 50,90
+            Q 10,60 10,30 z"
+        />
+        <path
+          stroke="black"
+          fill="none"
+          d="M -12,30 l 40,15
+            m 40,15 l 40,15
+            l -12,0 l 4,-8 l 9,9"
+        />
+      </g>
+      <g transform="skewX(20) translate(50 50)">
+        <rect fill="none" stroke="forestgreen" width="10" height="10" />
+      </g>
+    </svg>
+
+    <h2>Test output</h2>
+
+    <div id="output"></div>
+
+    <script type="module">
+      import svgToCnc from "./index.js";
+      const out = svgToCnc(document.getElementById("input"));
+      const outputContainer = document.getElementById("output");
+      outputContainer.appendChild(out);
+    </script>
+  </body>
+</html>

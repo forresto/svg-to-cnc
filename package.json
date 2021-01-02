@@ -1,0 +1,37 @@
+{
+  "name": "svg-to-cnc",
+  "version": "1.0.0",
+  "description": "Compiles SVG paths for CNC software down to basic X/Y movements. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in Cricut, and then set the tool for each layer.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx snowpack dev",
+    "test": "echo 'todo'",
+    "build": "npx snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forresto/svg-to-cnc.git"
+  },
+  "keywords": [
+    "svg",
+    "cnc",
+    "cricut",
+    "laser cutter",
+    "pen plotter",
+    "plotter",
+    "cutter",
+    "cuttle"
+  ],
+  "author": "Forrest Oliphant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forresto/svg-to-cnc/issues"
+  },
+  "homepage": "https://github.com/forresto/svg-to-cnc#readme",
+  "dependencies": {
+    "svgpath": "^2.3.0"
+  },
+  "devDependencies": {
+    "snowpack": "^2.18.5"
+  }
+}
