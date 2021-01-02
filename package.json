@@ -1,7 +1,7 @@
 {
-  "name": "svg-to-cnc",
-  "version": "0.0.1",
-  "description": "Compiles SVG paths for CNC software down to basic X/Y movements. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in Cricut, and then set the tool for each layer.",
+  "name": "@forresto/svg-to-cnc",
+  "version": "0.0.2",
+  "description": "Compiles SVG shapes and transforms for CNC software down to basic paths. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in CAM software (like Cricut Designer), and then set the tool for each layer.",
   "main": "index.js",
   "module": "build/index.js",
   "scripts": {

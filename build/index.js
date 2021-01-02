@@ -9,10 +9,9 @@ export default function svgToCnc (el, options = { consolidate: true, round: 7 })
   const pathified = pathify(el);
 
   // Don't want SVG viewBox while measuring
-  const viewBox = pathified.getAttribute('viewBox');
   const toMeasure = pathified.cloneNode(true);
-  // toMeasure.removeAttribute('width');
-  // toMeasure.removeAttribute('height');
+  toMeasure.removeAttribute('width');
+  toMeasure.removeAttribute('height');
   toMeasure.removeAttribute('viewBox');
 
   // Must be in doc to measure with el.getCTM()

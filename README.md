@@ -1,6 +1,6 @@
 # svg-to-cnc
 
-Compiles SVG paths for CNC software down basic paths. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in Cricut, and then set the tool for each layer.
+Compiles SVG shapes and transforms for CNC software down to basic paths. Each combination of stroke and fill becomes one path element. This makes it easier to attach them in CAM software (like Cricut Designer), and then set the tool for each layer.
 
 Demo, with SVG file input: https://observablehq.com/@forresto/svg-to-cnc
 
@@ -55,5 +55,5 @@ Set SVG width and height to inches, and viewBox to pixels:
 - [x] Be smarter about how to compile the paths 🤷‍♀️
 - [x] Fix \`viewBox\` breaks measuring
 - [ ] Fix unneeded penup / pendown (\`M\`)
-- [ ] Option to not consolidate paths (only group by "tool")
+- [x] Option to not consolidate paths (only group by "tool")
 - [ ] Nix fills?
