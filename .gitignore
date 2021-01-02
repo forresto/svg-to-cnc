@@ -1,6 +1,8 @@
 # Snowpack build
 build/*
 !build/index.js
+!build/web_modules/
+!build/src/
 
 # Logs
 logs
